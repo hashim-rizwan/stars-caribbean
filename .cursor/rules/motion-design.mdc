@@ -1,0 +1,16 @@
+---
+description: Motion, scroll, cursor, and layout constraints for UI work
+alwaysApply: true
+---
+
+# Motion and design
+
+For UI, layout, and animation, follow the project skills and `design.json`.
+
+- Import Motion from `motion/react`. Interaction springs come from `design.json` (`stiffness` 300 / `damping` 30, press 400 / 30).
+- Story pages use one smooth-scroll engine. Default is Lenis wired to GSAP ScrollTrigger (`cinematic-gsap-lenis-motion-system`, `gsap-scrolltrigger`). Locomotive Scroll is the alternate. Do not run both.
+- Reorders and shared elements use `layout` and `layoutId`. Exits use `AnimatePresence` with a stable `key`.
+- A custom cursor is a fine-pointer follower only. Hide it for coarse pointers and `prefers-reduced-motion`. States: default, text, and media, with magnetic pull on those targets.
+- Build mobile first. Touch targets are at least 44px. Multi-column layouts collapse to one column below 768px. Press feedback uses `whileTap`.
+- Components and controls use daisyUI. Page composition, type, and whitespace follow `design-taste-frontend`, `frontend-design`, and `taste-design`.
+- Read `design.json` before visual work. If `status` is `awaiting-reference`, extract a real reference into that file before choosing color or type.

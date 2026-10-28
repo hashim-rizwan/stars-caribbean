@@ -1,0 +1,107 @@
+{
+  "version": 1,
+  "skills": {
+    "cinematic-gsap-lenis-motion-system": {
+      "source": "MengTo/Skills",
+      "sourceType": "github",
+      "skillPath": "agent-skills/web-design/cinematic-gsap-lenis-motion-system/SKILL.md",
+      "computedHash": "c88995e62e587f7d2eaaa514131912a0ed5b77613513fdf61a938e51298ded4c"
+    },
+    "cinematic-scroll-storytelling": {
+      "source": "MengTo/Skills",
+      "sourceType": "github",
+      "skillPath": "agent-skills/web-design/cinematic-scroll-storytelling/SKILL.md",
+      "computedHash": "e5e835b5c3eb87e2f539f54872d00d8d2f540d8c250e64b52edbf89d1f6cfb2d"
+    },
+    "daisyui": {
+      "source": "saadeghi/daisyui",
+      "sourceType": "github",
+      "skillPath": "skills/daisyui/SKILL.md",
+      "computedHash": "f70b06883160802b5b04db0504647cc140bd38cf7eb941183a38f44a179b27ca"
+    },
+    "daisyui-colors": {
+      "source": "saadeghi/daisyui",
+      "sourceType": "github",
+      "skillPath": "skills/daisyui/colors/SKILL.md",
+      "computedHash": "91256ec1b283e99a8a122bece8927f46d59cc84b8764d67266a79142c16be27e"
+    },
+    "daisyui-config": {
+      "source": "saadeghi/daisyui",
+      "sourceType": "github",
+      "skillPath": "skills/daisyui/config/SKILL.md",
+      "computedHash": "e1101c4822181a1efbdbbc7427a6d74ff94c4b3906d34ab73f2ec45757eb04cf"
+    },
+    "daisyui-install": {
+      "source": "saadeghi/daisyui",
+      "sourceType": "github",
+      "skillPath": "skills/daisyui/install/SKILL.md",
+      "computedHash": "91ca085e608ddfcb059806a3964abc49543651b3ed856a62f7519f5ec17216c3"
+    },
+    "daisyui-usage": {
+      "source": "saadeghi/daisyui",
+      "sourceType": "github",
+      "skillPath": "skills/daisyui/usage/SKILL.md",
+      "computedHash": "7c8be50d85bb6375adde86c0b8d3fd2e27d444f51ef23abaeee45efc2b583ff9"
+    },
+    "design-md": {
+      "source": "google-labs-code/stitch-skills",
+      "sourceType": "github",
+      "skillPath": "plugins/stitch-utilities/skills/design-md/SKILL.md",
+      "computedHash": "d3a4c7d2f2715a33662c8b06ffc16035d01965a8b4ed81c2958fb22ae94760f8"
+    },
+    "design-taste-frontend": {
+      "source": "Leonxlnx/taste-skill",
+      "sourceType": "github",
+      "skillPath": "skills/taste-skill/SKILL.md",
+      "computedHash": "6ac8ba6089dcbc303744a507a4587113c5d845ca2f658b3ce2b0b5eab108fb0d"
+    },
+    "frontend-design": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "skillPath": "skills/frontend-design/SKILL.md",
+      "computedHash": "89496d5dd00f4810205f351759594fc2742bf8eea85a2f2b2d1de59f4bd91576"
+    },
+    "gsap-core": {
+      "source": "greensock/gsap-skills",
+      "sourceType": "github",
+      "skillPath": "skills/gsap-core/SKILL.md",
+      "computedHash": "c4a01101d9e1aafbf4b49f75d74f9349790d8741981ba0237c990093863035a6"
+    },
+    "gsap-react": {
+      "source": "greensock/gsap-skills",
+      "sourceType": "github",
+      "skillPath": "skills/gsap-react/SKILL.md",
+      "computedHash": "7d3b52822681a4158e371f895c58fb7030ecaf33f585a534b7162f9e92c5d893"
+    },
+    "gsap-scrolltrigger": {
+      "source": "greensock/gsap-skills",
+      "sourceType": "github",
+      "skillPath": "skills/gsap-scrolltrigger/SKILL.md",
+      "computedHash": "1cdc5647693783cb7a662d84a5de434c88a051ed56b4d33597c9b5782b5973e6"
+    },
+    "gsap-timeline": {
+      "source": "greensock/gsap-skills",
+      "sourceType": "github",
+      "skillPath": "skills/gsap-timeline/SKILL.md",
+      "computedHash": "54981c2feec5a9c0d57988aeb32315af32bdeadd261550d5e9db7a7b1f08b487"
+    },
+    "locomotive-scroll": {
+      "source": "freshtechbro/claudedesignskills",
+      "sourceType": "github",
+      "skillPath": ".claude/skills/locomotive-scroll/SKILL.md",
+      "computedHash": "131f3a40bbb2f73cf7c4c1804fcdf70bca0404a96d09bc92d513e1f875170c31"
+    },
+    "motion-framer": {
+      "source": "freshtechbro/claudedesignskills",
+      "sourceType": "github",
+      "skillPath": ".claude/skills/motion-framer/SKILL.md",
+      "computedHash": "16d7c6f24f1d1208500635331e0cf6e06555a44df461e6b1069e4ddb203fd737"
+    },
+    "taste-design": {
+      "source": "google-labs-code/stitch-skills",
+      "sourceType": "github",
+      "skillPath": "plugins/stitch-utilities/skills/taste-design/SKILL.md",
+      "computedHash": "1891625787d6f0f3bc45d4a9437c187277af66c219e3ec799b1b4e67822b6146"
+    }
+  }
+}

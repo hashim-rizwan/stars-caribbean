@@ -1,0 +1,74 @@
+{
+  "name": "Stars Caribbean",
+  "status": "locked",
+  "source": "https://www.instagram.com/starscaribbeanb/",
+  "colors": {
+    "canvas": "#F6E356",
+    "surface": "#E8C635",
+    "ink": "#12300E",
+    "muted": "#22572E",
+    "border": "#22572E",
+    "accent": "#12300E",
+    "tray": "#1C1410",
+    "gravy": "#C97117"
+  },
+  "typography": {
+    "display": "Anton",
+    "body": "Work Sans",
+    "mono": "Work Sans",
+    "scale": {
+      "display": "clamp(2.5rem, 1.2rem + 5vw, 5.5rem)",
+      "headline": "clamp(1.25rem, 1.1rem + 0.7vw, 1.625rem)",
+      "body": "clamp(1.0625rem, 1rem + 0.25vw, 1.1875rem)",
+      "caption": "clamp(0.8125rem, 0.79rem + 0.1vw, 0.875rem)"
+    },
+    "displayTracking": "-0.01em",
+    "displayLeading": 0.86,
+    "bodyLeading": 1.5
+  },
+  "easing": {
+    "enter": "power3.out",
+    "exit": "power3.in",
+    "hover": "power2.out",
+    "scroll": "none"
+  },
+  "grid": {
+    "columns": 12,
+    "maxWidth": "72rem",
+    "gutter": "1.5rem",
+    "margin": "1.5rem",
+    "breakpoints": {
+      "sm": 640,
+      "md": 768,
+      "lg": 1024,
+      "xl": 1280
+    }
+  },
+  "motion": {
+    "scrollEngine": "lenis",
+    "spring": {
+      "stiffness": 300,
+      "damping": 30
+    },
+    "press": {
+      "stiffness": 400,
+      "damping": 30
+    },
+    "scrub": 1,
+    "reveal": "0.85s"
+  },
+  "cursor": {
+    "finePointerOnly": true,
+    "states": ["default", "text", "media"]
+  },
+  "measured": {
+    "canvas": "Storefront sign pixel #F6E356",
+    "surface": "Average yellow facade pixels #E8C635",
+    "ink": "Sign green pixel #12300E",
+    "muted": "Average green sign lettering #22572E",
+    "border": "Same green, used as a filled edge, not a hairline",
+    "accent": "Same green as the sign lettering. The button fill.",
+    "tray": "Average black takeout tray from the August 5, 2020 combo #1C1410",
+    "gravy": "Average gravy pixels #C97117. Photographs only. Contrast on the green is 4.03, so it is not used for text."
+  }
+}

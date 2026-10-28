@@ -1,0 +1,649 @@
+[
+  {
+    "title": "House Favorites",
+    "items": [
+      {
+        "name": "Macaroni And Cheese",
+        "price": "$6.00",
+        "description": "",
+        "image": "/photos/menu/1000840492.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110872&item-id=1000840492"
+      },
+      {
+        "name": "Beef Patties",
+        "price": "$4.84",
+        "description": "Spicy.",
+        "image": "/photos/menu/1000840499.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110872&item-id=1000840499"
+      },
+      {
+        "name": "Large Oxtails",
+        "price": "$26.88",
+        "description": "Tender oxtail pieces in rich gravy, served with seasoned rice and a side of sautéed cabbage.",
+        "image": "/photos/menu/1000840511.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110873&item-id=1000840511"
+      },
+      {
+        "name": "Beef Combos",
+        "price": "$27.00",
+        "description": "(Oxtails, Curry Goat, Pork, Ribs, Stew Beef) Served with a choice of Rice& peas or White Rice or Dumplings & Banana and Steamed Cabbage.",
+        "image": "/photos/menu/1000840514.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110873&item-id=1000840514"
+      },
+      {
+        "name": "large brown stew chicken",
+        "price": "$17.00",
+        "description": "Choice of white rice, rice & peas, ground provisions, or cabbage.",
+        "image": "/photos/menu/1000840523.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110873&item-id=1000840523"
+      },
+      {
+        "name": "sm jerk chicken",
+        "price": "$16.97",
+        "description": "Jerk chicken, options for large or regular size.",
+        "image": "/photos/menu/1000840544.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110873&item-id=1000840544"
+      },
+      {
+        "name": "Lg curry chicken",
+        "price": "$17.00",
+        "description": "Tender chicken pieces simmered in a rich curry sauce, served with steamed rice, savory cabbage, and a side of seasoned breadcrumbs.",
+        "image": "/photos/menu/1000840546.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110873&item-id=1000840546"
+      },
+      {
+        "name": "small oxtail",
+        "price": "$24.19",
+        "description": "Tender oxtail in rich gravy, served with seasoned rice and sautéed cabbage.",
+        "image": "/photos/menu/1000840547.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110873&item-id=1000840547"
+      },
+      {
+        "name": "Large Curry Goat",
+        "price": "$26.88",
+        "description": "Tender goat chunks simmered in a rich curry sauce, served with rice and peas, fried plantains, and fresh lettuce and tomato.",
+        "image": "/photos/menu/1000840550.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110873&item-id=1000840550"
+      },
+      {
+        "name": "sm curry chicken",
+        "price": "$15.00",
+        "description": "Tender oxtail pieces in rich gravy, served with seasoned rice and a side of sautéed cabbage.",
+        "image": "/photos/menu/1000840564.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110873&item-id=1000840564"
+      },
+      {
+        "name": "Blue Velvet Cake",
+        "price": "$5.00",
+        "description": "Limited - call before you place order",
+        "image": "/photos/menu/1000840645.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110879&item-id=1000840645"
+      },
+      {
+        "name": "Homemade Fruit Punch",
+        "price": "$4.50",
+        "description": "",
+        "image": "/photos/menu/1000840647.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110880&item-id=1000840647"
+      }
+    ]
+  },
+  {
+    "title": "Appetizers",
+    "items": [
+      {
+        "name": "Macaroni And Cheese",
+        "price": "$6.00",
+        "description": "",
+        "image": "/photos/menu/1000840492.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110872&item-id=1000840492"
+      },
+      {
+        "name": "Cocoa Bread",
+        "price": "$3.50",
+        "description": "Soft, slightly sweet bread with a light, fluffy texture, perfect for pairing with savory fillings or enjoying on its own.",
+        "image": "/photos/menu/1000840496.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110872&item-id=1000840496"
+      },
+      {
+        "name": "Fries",
+        "price": "$4.00",
+        "description": "Limited - Call before you place order.",
+        "image": "/photos/menu/1000840497.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110872&item-id=1000840497"
+      },
+      {
+        "name": "Beef Patties",
+        "price": "$4.84",
+        "description": "Spicy.",
+        "image": "/photos/menu/1000840499.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110872&item-id=1000840499"
+      },
+      {
+        "name": "Wings",
+        "price": "$9.00",
+        "description": "",
+        "image": "/photos/menu/1000840501.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110872&item-id=1000840501"
+      }
+    ]
+  },
+  {
+    "title": "Meat Dishes",
+    "items": [
+      {
+        "name": "Large Oxtails",
+        "price": "$26.88",
+        "description": "Tender oxtail pieces in rich gravy, served with seasoned rice and a side of sautéed cabbage.",
+        "image": "/photos/menu/1000840511.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110873&item-id=1000840511"
+      },
+      {
+        "name": "Beef Combos",
+        "price": "$27.00",
+        "description": "(Oxtails, Curry Goat, Pork, Ribs, Stew Beef) Served with a choice of Rice& peas or White Rice or Dumplings & Banana and Steamed Cabbage.",
+        "image": "/photos/menu/1000840514.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110873&item-id=1000840514"
+      },
+      {
+        "name": "Large Jerk Ribs",
+        "price": "$20.69",
+        "description": "Succulent pork ribs marinated in jerk seasoning, served with a side of sautéed cabbage and a fresh lettuce and tomato garnish.",
+        "image": "/photos/menu/1000840522.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110873&item-id=1000840522"
+      },
+      {
+        "name": "large brown stew chicken",
+        "price": "$17.00",
+        "description": "Choice of white rice, rice & peas, ground provisions, or cabbage.",
+        "image": "/photos/menu/1000840523.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110873&item-id=1000840523"
+      },
+      {
+        "name": "Large Stew Beef",
+        "price": "$19.50",
+        "description": "Limited - Call before you place order.",
+        "image": "/photos/menu/1000840525.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110873&item-id=1000840525"
+      },
+      {
+        "name": "Small Curry Goat",
+        "price": "$24.19",
+        "description": "Curried goat served with two sides: choice of boiled dumpling, fried plantains, or steamed cabbage.",
+        "image": "/photos/menu/1000840528.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110873&item-id=1000840528"
+      },
+      {
+        "name": "large fried chicken",
+        "price": "$15.97",
+        "description": "Crispy fried chicken served with your choice of white rice, rice & peas, ground provisions, cabbage, or salad.",
+        "image": "/photos/menu/1000840530.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110873&item-id=1000840530"
+      },
+      {
+        "name": "Small Jerk Ribs",
+        "price": "$18.81",
+        "description": "Tender pork ribs marinated in jerk spices, served with sautéed cabbage and a fresh lettuce and tomato garnish.",
+        "image": "/photos/menu/1000840532.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110873&item-id=1000840532"
+      },
+      {
+        "name": "sm jerk wings",
+        "price": "$13.00",
+        "description": "Chicken Wings with choice of white rice, rice & peas, Ground Provisions, cabbage, or salad.",
+        "image": "/photos/menu/1000840535.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110873&item-id=1000840535"
+      },
+      {
+        "name": "sm stew beef",
+        "price": "$14.97",
+        "description": "White rice, rice and peas, ground provisions, or cabbage.",
+        "image": "/photos/menu/1000840536.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110873&item-id=1000840536"
+      },
+      {
+        "name": "Curry Goat Roti",
+        "price": "$15.00",
+        "description": "",
+        "image": "/photos/menu/1000840538.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110873&item-id=1000840538"
+      },
+      {
+        "name": "SM jerk wings with Cabbage",
+        "price": "$14.50",
+        "description": "White rice, rice & peas, ground provisions, cabbage, salad.",
+        "image": "/photos/menu/1000840542.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110873&item-id=1000840542"
+      },
+      {
+        "name": "sm jerk chicken",
+        "price": "$16.97",
+        "description": "Jerk chicken, options for large or regular size.",
+        "image": "/photos/menu/1000840544.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110873&item-id=1000840544"
+      },
+      {
+        "name": "Lg curry chicken",
+        "price": "$17.00",
+        "description": "Tender chicken pieces simmered in a rich curry sauce, served with steamed rice, savory cabbage, and a side of seasoned breadcrumbs.",
+        "image": "/photos/menu/1000840546.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110873&item-id=1000840546"
+      },
+      {
+        "name": "small oxtail",
+        "price": "$24.19",
+        "description": "Tender oxtail in rich gravy, served with seasoned rice and sautéed cabbage.",
+        "image": "/photos/menu/1000840547.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110873&item-id=1000840547"
+      },
+      {
+        "name": "lg stew beef",
+        "price": "$16.97",
+        "description": "Tender beef in rich stew. Choice of white rice, rice and peas, ground provisions, or cabbage.",
+        "image": "/photos/menu/1000840548.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110873&item-id=1000840548"
+      },
+      {
+        "name": "Large Curry Goat",
+        "price": "$26.88",
+        "description": "Tender goat chunks simmered in a rich curry sauce, served with rice and peas, fried plantains, and fresh lettuce and tomato.",
+        "image": "/photos/menu/1000840550.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110873&item-id=1000840550"
+      },
+      {
+        "name": "Small Stew Beef",
+        "price": "$14.97",
+        "description": "Limited - Call before you place order.",
+        "image": "/photos/menu/1000840551.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110873&item-id=1000840551"
+      },
+      {
+        "name": "large stew peas",
+        "price": "$15.02",
+        "description": "Hearty stew peas served with your choice of white rice, rice & peas, ground provisions, cabbage, or salad.",
+        "image": "/photos/menu/1000840552.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110873&item-id=1000840552"
+      },
+      {
+        "name": "small fried chicken",
+        "price": "$12.97",
+        "description": "White rice, rice and peas, ground provisions, cabbage, or salad.",
+        "image": "/photos/menu/1000840555.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110873&item-id=1000840555"
+      },
+      {
+        "name": "sm stew peas",
+        "price": "$13.97",
+        "description": "Stew peas with choice of white rice, rice and peas, ground provisions, cabbage, salad.",
+        "image": "/photos/menu/1000840558.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110873&item-id=1000840558"
+      },
+      {
+        "name": "lg jerk wings",
+        "price": "$18.81",
+        "description": "Chicken Wings with choice of side. Options include white rice, rice & peas, ground provisions, cabbage, or salad.",
+        "image": "/photos/menu/1000840562.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110873&item-id=1000840562"
+      },
+      {
+        "name": "sm curry chicken",
+        "price": "$15.00",
+        "description": "",
+        "image": "/photos/menu/1000840564.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110873&item-id=1000840564"
+      }
+    ]
+  },
+  {
+    "title": "Vegetarian Dishes",
+    "items": [
+      {
+        "name": "Curry Salmon",
+        "price": "$23.00",
+        "description": "Fried, Steamed, Brown Stewed, or Escoveitch (marinated in vinegar, peppers, and spices).",
+        "image": "/photos/menu/1000840601.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110877&item-id=1000840601"
+      },
+      {
+        "name": "Large Ackee & Salt Fish",
+        "price": "$18.50",
+        "description": "Please allow an extra 15 minutes for cook time.",
+        "image": "/photos/menu/1000840615.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110877&item-id=1000840615"
+      },
+      {
+        "name": "Small Ackee ( Without Saltfish)",
+        "price": "$11.97",
+        "description": "Please allow 15- 20 mins to cook",
+        "image": "/photos/menu/1000840618.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110877&item-id=1000840618"
+      },
+      {
+        "name": "Small Callaloo & Salt Fish",
+        "price": "$9.50",
+        "description": "Please allow an extra 15 minutes for cook time.",
+        "image": "/photos/menu/1000840622.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110877&item-id=1000840622"
+      },
+      {
+        "name": "king fish salad",
+        "price": "$11.97",
+        "description": "Served with crispy deep fried fish prepared fresh with the chef original recipe.",
+        "image": "/photos/menu/1000840624.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110877&item-id=1000840624"
+      },
+      {
+        "name": "Small Ackee & Salt Fish",
+        "price": "$14.97",
+        "description": "Please allow an extra 15 minutes for cook time.",
+        "image": "/photos/menu/1000840625.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110877&item-id=1000840625"
+      },
+      {
+        "name": "Tilapia",
+        "price": "$16.00",
+        "description": "Ask about Curried/Fried/Brown Stew/Jerk/ Please allow an extra 20-30 minutes for cook time.",
+        "image": "/photos/menu/1000840627.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110877&item-id=1000840627"
+      },
+      {
+        "name": "Curry Shrimp",
+        "price": "$19.00",
+        "description": "Curry shrimp with choice of fish (fried, steamed, brown stewed, escoveitch) and sides like white rice, rice & peas, ground provisions, cabbage, or salad.",
+        "image": "/photos/menu/1000840629.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110877&item-id=1000840629"
+      },
+      {
+        "name": "Large Callaloo and Salt Fish",
+        "price": "$11.50",
+        "description": "Please allow an extra 15 minutes for cook time.",
+        "image": "/photos/menu/1000840631.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110877&item-id=1000840631"
+      },
+      {
+        "name": "Butter Bean & Saltfish",
+        "price": "$9.97",
+        "description": "Limited - Call before you place order.",
+        "image": "/photos/menu/1000840634.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110877&item-id=1000840634"
+      },
+      {
+        "name": "Small Vegetable Plate",
+        "price": "$11.00",
+        "description": "Served w/rice & peas , Cabbage & Sweet Plantains.",
+        "image": "/photos/menu/1000840636.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110877&item-id=1000840636"
+      },
+      {
+        "name": "Red Snapper",
+        "price": "$26.00",
+        "description": "Ask about Curried/Fried/Brown Stew/Jerk/ Please allow an extra 20-30 minutes for cook time.",
+        "image": "/photos/menu/1000840638.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110877&item-id=1000840638"
+      }
+    ]
+  },
+  {
+    "title": "Dessert",
+    "items": [
+      {
+        "name": "Carrot Cake",
+        "price": "$5.00",
+        "description": "Limited - call before you place order",
+        "image": "/photos/menu/1000840641.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110879&item-id=1000840641"
+      },
+      {
+        "name": "Blue Velvet Cake",
+        "price": "$5.00",
+        "description": "Limited - call before you place order",
+        "image": "/photos/menu/1000840645.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110879&item-id=1000840645"
+      },
+      {
+        "name": "Chocolate Cake",
+        "price": "$3.50",
+        "description": "Decadent chocolate delight, lavished with rich frosting and served with a dollop of indulgence.",
+        "image": "/photos/menu/1000840646.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110879&item-id=1000840646"
+      }
+    ]
+  },
+  {
+    "title": "Drinks",
+    "items": [
+      {
+        "name": "Homemade Fruit Punch",
+        "price": "$4.50",
+        "description": "",
+        "image": "/photos/menu/1000840647.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110880&item-id=1000840647"
+      },
+      {
+        "name": "Jamaican D & G Soda Pineapple",
+        "price": "$3.00",
+        "description": "",
+        "image": "/photos/menu/1000840648.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110880&item-id=1000840648"
+      },
+      {
+        "name": "Homemade Lemonade",
+        "price": "$4.50",
+        "description": "",
+        "image": "/photos/menu/1000840650.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110880&item-id=1000840650"
+      },
+      {
+        "name": "Jamaican D & G Soda Kola Champagne",
+        "price": "$3.00",
+        "description": "",
+        "image": "/photos/menu/1000840651.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110880&item-id=1000840651"
+      },
+      {
+        "name": "Jamaican D & G Soda Grape",
+        "price": "$3.00",
+        "description": "",
+        "image": "/photos/menu/1000840652.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110880&item-id=1000840652"
+      },
+      {
+        "name": "Jamaican D & G Soda Ting",
+        "price": "$3.00",
+        "description": "",
+        "image": "/photos/menu/1000840653.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110880&item-id=1000840653"
+      },
+      {
+        "name": "Guava Punch Homemade",
+        "price": "$4.50",
+        "description": "",
+        "image": "/photos/menu/1000840654.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110880&item-id=1000840654"
+      },
+      {
+        "name": "Jamaican D & G Soda Ginger Beer",
+        "price": "$3.00",
+        "description": "",
+        "image": "/photos/menu/1000840656.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110880&item-id=1000840656"
+      },
+      {
+        "name": "Homemade Sorrel",
+        "price": "$4.00",
+        "description": "",
+        "image": "/photos/menu/1000840658.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110880&item-id=1000840658"
+      },
+      {
+        "name": "Irish Moss Vanilla/Peanut punch",
+        "price": "$3.50",
+        "description": "",
+        "image": "/photos/menu/1000840661.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110880&item-id=1000840661"
+      },
+      {
+        "name": "Jamaican D & G Soda Cream Soda",
+        "price": "$3.00",
+        "description": "",
+        "image": "/photos/menu/1000840668.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110880&item-id=1000840668"
+      },
+      {
+        "name": "Jamaican D & G Soda Pineapple Ginger",
+        "price": "$3.00",
+        "description": "",
+        "image": "/photos/menu/1000840670.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110880&item-id=1000840670"
+      },
+      {
+        "name": "Water",
+        "price": "$1.75",
+        "description": "Clear, refreshing bottled water.",
+        "image": "/photos/menu/1000840673.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110880&item-id=1000840673"
+      },
+      {
+        "name": "Carribbean King Fruit Juice",
+        "price": "$3.75",
+        "description": "",
+        "image": "/photos/menu/1000840675.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110880&item-id=1000840675"
+      }
+    ]
+  },
+  {
+    "title": "Salads",
+    "items": [
+      {
+        "name": "Lg Oxtail Rasta Pasta",
+        "price": "$26.88",
+        "description": "Tender oxtail pieces atop rotini pasta, mixed with vibrant bell peppers and carrots.",
+        "image": "/photos/menu/1000840700.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110881&item-id=1000840700"
+      },
+      {
+        "name": "Lg Curry Chicken Rasta Pasta",
+        "price": "$18.20",
+        "description": "Tender curry chicken atop spiral pasta with mixed vegetables.",
+        "image": "/photos/menu/1000840702.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110881&item-id=1000840702"
+      },
+      {
+        "name": "LG Brown Stew Chicken",
+        "price": "$18.20",
+        "description": "",
+        "image": "/photos/menu/1000840704.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110881&item-id=1000840704"
+      },
+      {
+        "name": "Large Jerk Chicken Salad",
+        "price": "$11.50",
+        "description": "Served with moisten slices from our Famous Jerk Chicken.",
+        "image": "/photos/menu/1000840705.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110881&item-id=1000840705"
+      },
+      {
+        "name": "LG RASTA PASTA Jerk Chicken",
+        "price": "$19.00",
+        "description": "Rotini pasta with jerk-seasoned chicken, bell peppers, and a light, creamy dressing.",
+        "image": "/photos/menu/1000840708.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110881&item-id=1000840708"
+      },
+      {
+        "name": "King Fish Salad",
+        "price": "$15.00",
+        "description": "Served with crispy deep fried fish prepared fresh with the Chef original recipe.",
+        "image": "/photos/menu/1000840711.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110881&item-id=1000840711"
+      },
+      {
+        "name": "Large Crispy Chicken Salad",
+        "price": "$12.50",
+        "description": "Served with crispy chunks of well-seasoned fried chicken.",
+        "image": "/photos/menu/1000840713.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110881&item-id=1000840713"
+      }
+    ]
+  },
+  {
+    "title": "Soups",
+    "items": [
+      {
+        "name": "Large Goat Soup",
+        "price": "$17.00",
+        "description": "",
+        "image": "/photos/menu/1000840716.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110886&item-id=1000840716"
+      },
+      {
+        "name": "saturday special small soup",
+        "price": "$9.00",
+        "description": "",
+        "image": "/photos/menu/1000840718.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110886&item-id=1000840718"
+      },
+      {
+        "name": "Large Soup Red Pea or Chicken",
+        "price": "$13.00",
+        "description": "",
+        "image": "/photos/menu/1000840720.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110886&item-id=1000840720"
+      },
+      {
+        "name": "Small Goat Soup",
+        "price": "$9.00",
+        "description": "Tender goat pieces with hearty vegetables in a rich, savory broth, featuring a vibrant mix of herbs and spices.",
+        "image": "/photos/menu/1000840721.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110886&item-id=1000840721"
+      },
+      {
+        "name": "Lg Saturday Chef Special",
+        "price": "$15.00",
+        "description": "",
+        "image": "/photos/menu/1000840722.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110886&item-id=1000840722"
+      },
+      {
+        "name": "Small Soup Red Peas or Chicken",
+        "price": "$8.00",
+        "description": "",
+        "image": "/photos/menu/1000840724.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110886&item-id=1000840724"
+      }
+    ]
+  },
+  {
+    "title": "Roti",
+    "items": [
+      {
+        "name": "curry chicken roti",
+        "price": "$11.75",
+        "description": "Tender chicken pieces in a rich curry sauce with potatoes and carrots, wrapped in a soft, warm roti.",
+        "image": "/photos/menu/1000840726.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110890&item-id=1000840726"
+      },
+      {
+        "name": "jerk chick roti",
+        "price": "$12.97",
+        "description": "Tender chicken pieces in a rich curry sauce with potatoes and carrots, wrapped in a soft, warm roti.",
+        "image": "/photos/menu/1000840738.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110890&item-id=1000840738"
+      },
+      {
+        "name": "curry goat roti",
+        "price": "$15.00",
+        "description": "",
+        "image": "/photos/menu/1000840742.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110890&item-id=1000840742"
+      },
+      {
+        "name": "shrimp roti",
+        "price": "$18.00",
+        "description": "",
+        "image": "/photos/menu/1000840743.jpg",
+        "href": "https://starscaribbeanrestaurant.com/?category-id=1000110890&item-id=1000840743"
+      }
+    ]
+  }
+]
