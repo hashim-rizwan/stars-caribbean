@@ -125,8 +125,8 @@ a {
 .sheet {
   position: relative;
   z-index: 1;
-  background: var(--canvas);
-  color: var(--ink);
+  background: var(--tray);
+  color: var(--canvas);
 }
 
 .frame {
@@ -139,13 +139,15 @@ a {
   top: 0;
   z-index: 30;
   background: var(--canvas);
+  color: var(--ink);
   min-height: 4.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  width: min(var(--max-width), calc(100% - (var(--margin) * 2)));
-  margin-inline: auto;
+  width: 100%;
+  padding-inline: var(--margin);
+  box-sizing: border-box;
 }
 
 .nav-links {
@@ -218,20 +220,20 @@ a {
 
 .hero {
   min-height: calc(100svh - 4.5rem);
-  padding: 0 var(--margin) 0;
+  padding: 0;
 }
 
 .hero-layout {
   display: flex;
   flex-direction: column;
-  gap: var(--gutter);
+  gap: 0;
   min-height: calc(100svh - 4.5rem);
 }
 
 .hero-photo {
   order: -1;
   flex: 1 1 auto;
-  min-height: 58svh;
+  min-height: 72svh;
   overflow: hidden;
   background: var(--tray);
 }
@@ -244,7 +246,9 @@ a {
 }
 
 .hero-copy {
-  padding-bottom: 1.5rem;
+  background: var(--canvas);
+  color: var(--ink);
+  padding: 1.5rem var(--margin) 2rem;
 }
 
 .hero-copy h1 {
@@ -261,23 +265,24 @@ a {
 @media (min-width: 768px) {
   .hero-layout {
     display: grid;
-    grid-template-columns: 5fr 7fr;
-    align-items: end;
-    gap: var(--gutter);
+    grid-template-columns: 4fr 8fr;
+    align-items: stretch;
+    gap: 0;
   }
 
   .hero-photo {
-    order: 0;
-    min-height: 88svh;
-    height: 88svh;
+    order: 2;
+    min-height: 92svh;
+    height: 92svh;
   }
 
   .hero-copy {
+    order: 1;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-end;
     min-height: 100%;
-    padding: 4vh 0 4vh;
+    padding: 2rem var(--margin) 2.5rem;
   }
 }
 
@@ -387,6 +392,13 @@ a {
 
 .counter {
   padding: clamp(4.5rem, 10vw, 8rem) 0;
+  background: var(--tray);
+  color: var(--canvas);
+}
+
+.counter h2,
+.counter > .frame > p {
+  color: var(--canvas);
 }
 
 .counter h2,
@@ -403,15 +415,19 @@ a {
 }
 
 .plate-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--gutter);
+  display: flex;
+  gap: 0.75rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 0.5rem;
 }
 
 .plate-card {
   display: flex;
   flex-direction: column;
   background: var(--canvas);
+  flex: 0 0 84vw;
+  scroll-snap-align: start;
   min-width: 0;
 }
 
@@ -453,19 +469,12 @@ a {
 }
 
 @media (min-width: 768px) {
-  .plate-grid {
-    grid-template-columns: 1.35fr 1fr 1fr;
+  .plate-card {
+    flex-basis: 26rem;
   }
 
-  .plate-card.span-tall {
-    grid-row: span 2;
-  }
-
-  .plate-card.span-tall img,
-  .plate-card.span-tall .plate-gap {
-    height: 100%;
-    aspect-ratio: auto;
-    min-height: 100%;
+  .plate-card:first-child {
+    flex-basis: 38rem;
   }
 }
 
@@ -474,8 +483,8 @@ a {
   grid-template-columns: 1fr;
   gap: var(--gutter);
   margin-bottom: 1.5rem;
-  background: var(--tray);
-  color: var(--canvas);
+  background: var(--canvas);
+  color: var(--ink);
 }
 
 .dish img {
@@ -501,7 +510,7 @@ a {
 }
 
 .dish-copy h3 a {
-  color: var(--canvas);
+  color: var(--ink);
   text-decoration: none;
   min-height: 44px;
   display: inline-flex;
@@ -624,11 +633,13 @@ a {
 
 .menu-tabs {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
   gap: 0.5rem;
-  margin: 0 auto 1.5rem;
-  max-width: 46rem;
+  margin: 0 0 1.5rem;
+  max-width: none;
+  overflow-x: auto;
+  padding-bottom: 0.25rem;
 }
 
 .menu-tabs .btn {
@@ -636,6 +647,7 @@ a {
   color: var(--ink);
   border: 0;
   box-shadow: none;
+  flex: none;
 }
 
 .menu-tabs .btn[aria-selected="true"] {
@@ -676,17 +688,64 @@ a {
   text-align: center;
 }
 
+.finder-label {
+  display: block;
+  font-weight: 600;
+  margin: 0 0 0.4rem;
+}
+
+.finder {
+  width: 100%;
+  max-width: none;
+  background: var(--surface);
+  color: var(--ink);
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 1.25rem;
+}
+
+.finder::placeholder {
+  color: var(--muted);
+}
+
 .menu-row {
   display: grid;
   grid-template-columns: 4.5rem 1fr auto;
   gap: 0.35rem 1rem;
   align-items: center;
   padding-block: 0.7rem;
-  max-width: 28rem;
-  margin-inline: auto;
+  width: 100%;
+  max-width: none;
+  margin-inline: 0;
   min-height: 44px;
+  border: 0;
+  background: transparent;
   color: inherit;
-  text-decoration: none;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.menu-open {
+  background: var(--ink);
+  color: var(--canvas);
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.menu-open p {
+  margin: 0 0 0.85rem;
+}
+
+.size-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.85rem;
+}
+
+.size-row .btn[aria-pressed="true"] {
+  background: var(--surface);
 }
 
 .menu-row img {
@@ -938,6 +997,46 @@ a {
 
 .page-end {
   margin-bottom: 100svh;
+}
+
+.dock {
+  position: fixed;
+  z-index: 40;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: var(--canvas);
+  color: var(--ink);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.dock a {
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: inherit;
+  text-decoration: none;
+}
+
+.dock a:last-child {
+  background: var(--ink);
+  color: var(--canvas);
+}
+
+@media (max-width: 767px) {
+  .page-end {
+    padding-bottom: 3.25rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .dock {
+    display: none;
+  }
 }
 
 .back h2 {

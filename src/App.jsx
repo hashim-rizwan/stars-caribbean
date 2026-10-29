@@ -1,9 +1,10 @@
-import { useRef, useState } from "react";
+import { useMemo, useRef, useState } from "react";
 import { LayoutGroup, motion, useMotionValue, useSpring } from "motion/react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import Cursor from "./Cursor.jsx";
 import useSmoothScroll from "./useSmoothScroll.js";
+import { sectionsFrom } from "./board.js";
 import { plates } from "./plates.js";
 import { reviewPlaces, reviews } from "./reviews.js";
 import menu from "./menu.json";
@@ -111,7 +112,6 @@ export default function App() {
               <a href="#visit" data-cursor="text">Visit</a>
               <CallButton />
             </nav>
-            <MobileNav />
           </header>
 
           <Hero />
@@ -120,6 +120,12 @@ export default function App() {
           <Guests />
           <Visit />
         </div>
+        <nav className="dock" aria-label="Actions">
+          <a href="#plates">Plates</a>
+          <a href="#menu">Menu</a>
+          <a href={phone}>Call</a>
+          <a href={order}>Order</a>
+        </nav>
         <footer className="back">
           <h2 className="display">Star’s</h2>
           <div className="back-meta">
@@ -139,31 +145,6 @@ export default function App() {
           </div>
         </footer>
       </div>
-    </>
-  );
-}
-
-function MobileNav() {
-  const [open, setOpen] = useState(false);
-  return (
-    <>
-      <button
-        className="btn nav-toggle"
-        type="button"
-        aria-expanded={open}
-        onClick={() => setOpen((value) => !value)}
-      >
-        {open ? "Close" : "Menu"}
-      </button>
-      {open ? (
-        <nav className="nav-panel" aria-label="Sections" style={{ position: "absolute", left: 0, right: 0, top: "4.5rem" }}>
-          <a href="#plates" onClick={() => setOpen(false)}>Plates</a>
-          <a href="#menu" onClick={() => setOpen(false)}>Menu</a>
-          <a href="#reviews" onClick={() => setOpen(false)}>Guests</a>
-          <a href="#visit" onClick={() => setOpen(false)}>Visit</a>
-          <a href={phone} onClick={() => setOpen(false)}>Call (904) 381-9022</a>
-        </nav>
-      ) : null}
     </>
   );
 }
@@ -209,7 +190,7 @@ function Counter() {
         <h2 className="display" data-reveal>
           Plates
         </h2>
-        <p data-reveal>Pick a plate. It opens on its own.</p>
+        <p data-reveal>Swipe the counter. The name orders that dish.</p>
         <LayoutGroup>
           {plate ? (
             <motion.figure className="dish" layout transition={spring}>
@@ -243,8 +224,8 @@ function Counter() {
             </motion.figure>
           ) : null}
           <div className="plate-grid">
-            {plates.map((item, index) => (
-              <div key={item.id} className={index === 0 ? "plate-card span-tall" : "plate-card"}>
+            {plates.map((item) => (
+              <div key={item.id} className="plate-card">
                 <motion.button
                   type="button"
                   className="plate-hit"
@@ -280,55 +261,130 @@ function Counter() {
   );
 }
 
-function menuNote(description) {
-  return description?.trim() ?? "";
-}
-
 function MenuSheet() {
-  const [active, setActive] = useState(menu[0].title);
-  const group = menu.find((item) => item.title === active) ?? menu[0];
+  const sections = useMemo(() => sectionsFrom(menu), []);
+  const [active, setActive] = useState(sections[0].title);
+  const [query, setQuery] = useState("");
+  const [open, setOpen] = useState(null);
+  const [choice, setChoice] = useState(0);
+  const needle = query.trim().toLowerCase();
+  const searching = needle.length > 0;
+  const current = sections.find((section) => section.title === active) ?? sections[0];
+  const visible = searching
+    ? sections.flatMap((section) =>
+        section.dishes
+          .filter((dish) =>
+            `${dish.title} ${section.short} ${dish.options.map((option) => `${option.name} ${option.description}`).join(" ")}`
+              .toLowerCase()
+              .includes(needle),
+          )
+          .map((dish) => ({ section, dish })),
+      )
+    : current.dishes.map((dish) => ({ section: current, dish }));
+
+  function toggle(id, dish) {
+    if (open === id) {
+      setOpen(null);
+      return;
+    }
+    const large = dish.options.findIndex((option) => option.label === "Large");
+    setChoice(large === -1 ? 0 : large);
+    setOpen(id);
+  }
 
   return (
     <section className="menu-block" id="menu">
       <div className="frame">
         <div className="menu-sheet">
           <h2 className="display">Menu</h2>
-          <p className="menu-note">Prices from the restaurant’s order page. Call if a dish is marked limited.</p>
-          <div className="menu-tabs" role="tablist" aria-label="Menu sections">
-            {menu.map((item) => (
-              <motion.button
-                key={item.title}
-                type="button"
-                role="tab"
-                className="btn"
-                aria-selected={item.title === group.title}
-                onClick={() => setActive(item.title)}
-                whileTap={{ scale: 0.97 }}
-                transition={press}
-              >
-                {item.title.replace(" Dishes", "")}
-              </motion.button>
-            ))}
-          </div>
+          <p className="menu-note">Prices from the order page. Open a dish, then send the order.</p>
+          <label className="finder-label" htmlFor="menu-find">
+            Find a dish
+          </label>
+          <input
+            id="menu-find"
+            className="input input-lg finder"
+            type="search"
+            value={query}
+            placeholder="Oxtail, goat, punch"
+            onChange={(event) => {
+              setQuery(event.target.value);
+              setOpen(null);
+            }}
+          />
+          {searching ? null : (
+            <div className="menu-tabs" role="tablist" aria-label="Menu sections">
+              {sections.map((item) => (
+                <motion.button
+                  key={item.title}
+                  type="button"
+                  role="tab"
+                  className="btn"
+                  aria-selected={item.title === current.title}
+                  onClick={() => {
+                    setActive(item.title);
+                    setOpen(null);
+                  }}
+                  whileTap={{ scale: 0.97 }}
+                  transition={press}
+                >
+                  {item.short}
+                </motion.button>
+              ))}
+            </div>
+          )}
           <div className="menu-group" role="tabpanel">
-            <h3>{group.title}</h3>
-            {group.title === "Soups" ? (
+            <h3>{searching ? "Matches" : current.title}</h3>
+            {!searching && current.title === "Soups" ? (
               <p className="group-note">
                 Tuesday–Thursday: red peas soup. Wednesday: chicken soup. Friday: goat soup. Saturday: chef special.
               </p>
             ) : null}
+            {visible.length === 0 ? <p className="group-note">Nothing under that name. Call the counter.</p> : null}
             <div className="menu-list">
-              {group.items.map((item) => {
-                const note = menuNote(item.description);
+              {visible.map(({ section, dish }) => {
+                const id = `${section.title}-${dish.key}`;
+                const opened = open === id;
+                const option = dish.options[Math.min(choice, dish.options.length - 1)];
                 return (
-                  <a className="menu-row" key={item.href} href={item.href} data-cursor="text">
-                    <img src={item.image} width="800" height="800" alt="" />
-                    <span>
-                      <strong>{item.name}</strong>
-                      {note ? <p>{note}</p> : null}
-                    </span>
-                    <em>{item.price}</em>
-                  </a>
+                  <div className="menu-item" key={id}>
+                    <button
+                      type="button"
+                      className="menu-row"
+                      aria-expanded={opened}
+                      data-cursor="text"
+                      onClick={() => toggle(id, dish)}
+                    >
+                      <img src={opened ? option.image : dish.image} width="800" height="800" alt="" />
+                      <span>
+                        <strong>{searching ? `${dish.title}, ${section.short}` : dish.title}</strong>
+                      </span>
+                      <em>{dish.price}</em>
+                    </button>
+                    {opened ? (
+                      <div className="menu-open">
+                        {dish.options.length > 1 ? (
+                          <div className="size-row" role="group" aria-label={`${dish.title} size`}>
+                            {dish.options.map((item, index) => (
+                              <button
+                                key={item.href}
+                                type="button"
+                                className="btn btn-sign"
+                                aria-pressed={index === Math.min(choice, dish.options.length - 1)}
+                                onClick={() => setChoice(index)}
+                              >
+                                {item.label} {item.price}
+                              </button>
+                            ))}
+                          </div>
+                        ) : null}
+                        {option.description ? <p>{option.description}</p> : null}
+                        <a className="btn btn-lg btn-sign" href={option.href} data-cursor="text">
+                          Order {option.name}
+                        </a>
+                      </div>
+                    ) : null}
+                  </div>
                 );
               })}
             </div>
